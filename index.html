@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+    </div>
+
+    <main class="container">
+
+        <section class="countdown-card">
+
+            <div class="top-section">
+                <span class="badge">⏳ COUNTDOWN TIMER</span>
+
+                <h1>Something Amazing<br>
+                    <span>Is Coming</span>
+                </h1>
+
+                <p class="subtitle">
+                    The countdown has started. Stay tuned for the big moment!
+                </p>
+            </div>
+
+            <div class="timer" id="timer">
+
+                <div class="time-box">
+                    <div class="number" id="days">00</div>
+                    <div class="label">DAYS</div>
+                </div>
+
+                <div class="separator">:</div>
+
+                <div class="time-box">
+                    <div class="number" id="hours">00</div>
+                    <div class="label">HOURS</div>
+                </div>
+
+                <div class="separator">:</div>
+
+                <div class="time-box">
+                    <div class="number" id="minutes">00</div>
+                    <div class="label">MINUTES</div>
+                </div>
+
+                <div class="separator">:</div>
+
+                <div class="time-box">
+                    <div class="number" id="seconds">00</div>
+                    <div class="label">SECONDS</div>
+                </div>
+
+            </div>
+
+            <div class="target-info">
+                <span class="calendar-icon">📅</span>
+                <span id="targetDateText">Loading target date...</span>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <p class="progress-text">Counting down to the moment</p>
+
+        </section>
+
+        <footer>
+            Built with HTML5 • CSS3 • JavaScript
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
